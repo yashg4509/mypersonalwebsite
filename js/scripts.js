@@ -15,7 +15,7 @@ var messages = [
   'Hey there 👋',
   'I\'m Julian',
   'I design and code things on the web',
-  'I\'m currently accepting freelance work.<br> You can contact me at <a href="mailto:hello@julian.gr;">hello@julian.gr</a>',
+  'I\'m currently accepting freelance work.<br> You can contact me at <a href="mailto:hello@julian.gr">hello@julian.gr</a>',
   'Or<br><a target="_blank" href="#">twitter.com/juliangarnier</a><br><a target="_blank" href="#">codepen.io/juliangarnier</a><br><a target="_blank" href="#">github.com/juliangarnier</a>',
   getCurrentTime(),
   '👀 J.'
