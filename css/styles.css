@@ -22,7 +22,6 @@ body {
   padding: 1rem;
 }
 .bubble {
-  overflow: hidden;
   display: inline-block;
   margin: 2.5rem 0 .125rem -2.5rem;
   padding: .5rem 0rem .5rem 1rem;
@@ -30,7 +29,7 @@ body {
   border-radius: 1.25rem;
   transform-origin: 0 100%;
 }
-.bubble:before {
+.bubble:after {
   content: "";
   position: absolute;
   bottom: 0;

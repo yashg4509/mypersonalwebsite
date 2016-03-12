@@ -7,9 +7,9 @@ var getCurrentTime = function() {
   var hours =  date.getHours();
   var minutes =  date.getMinutes();
   var current = hours + (minutes * .01);
-  if (current >= 5 && current < 19) return 'Have a nice day! 👌';
-  if (current >= 19 && current < 22) return 'Have a nice evening 🌇';
-  if (current >= 22 || current < 5) return 'Have a good night! 🌝';
+  if (current >= 5 && current < 19) return 'Have a nice day';
+  if (current >= 19 && current < 22) return 'Have a nice evening';
+  if (current >= 22 || current < 5) return 'Have a good night';
 }
 var messages = [
   'Hey there 👋',
@@ -18,7 +18,7 @@ var messages = [
   'I\'m currently accepting freelance work.<br> You can contact me at <a href="mailto:hello@julian.gr;">hello@julian.gr</a>',
   'Or<br><a target="_blank" href="#">twitter.com/juliangarnier</a><br><a target="_blank" href="#">codepen.io/juliangarnier</a><br><a target="_blank" href="#">github.com/juliangarnier</a>',
   getCurrentTime(),
-  'J.'
+  '👀 J.'
 ];
 
 
