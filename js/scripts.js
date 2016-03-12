@@ -34,9 +34,10 @@ var bubbleAnimations = function(el) {
   return {
     start: anime({
       targets: el,
-      width: [pxToRem(0), pxToRem(el.offsetWidth + getFontSize())],
+      width: [pxToRem(0), pxToRem(el.offsetWidth)],
       marginLeft: ['-2.5rem', '0rem'],
       marginTop: ['2.5rem', '0rem'],
+      paddingRight: ['0rem', '0rem'],
       duration: 800,
       easing: 'easeOutElastic'
     }),
@@ -108,8 +109,9 @@ var sendMessage = function(message, position) {
     anime({
       targets: bubbleEl,
       scale: 1,
-      width: [pxToRem(bubbleEl.offsetWidth), pxToRem(hiddenEl.offsetWidth + getFontSize())],
+      width: [pxToRem(bubbleEl.offsetWidth), pxToRem(hiddenEl.offsetWidth)],
       height: [pxToRem(bubbleEl.offsetHeight), pxToRem(hiddenEl.offsetHeight)],
+      paddingRight: ['0rem', '0rem'],
       duration: 800,
       easing: 'easeOutElastic'
     });

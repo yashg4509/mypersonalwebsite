@@ -23,8 +23,9 @@ body {
 }
 .bubble {
   display: inline-block;
+  max-width: calc(100vw - 1.5rem);
   margin: 2.5rem 0 .125rem -2.5rem;
-  padding: .5rem 0rem .5rem 1rem;
+  padding: .5rem 1rem .5rem 1rem;
   line-height: 1.25rem;
   border-radius: 1.25rem;
   transform-origin: 0 100%;
