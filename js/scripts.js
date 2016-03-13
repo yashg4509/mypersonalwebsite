@@ -130,6 +130,6 @@ window.onload = function() {
     setTimeout(sendMessages, (message.length * typingSpeed) + anime.random(900, 1200));
   }
 
-  setTimeout(sendMessages, 250);
+  sendMessages();
 
 }
