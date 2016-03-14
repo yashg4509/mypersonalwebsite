@@ -107,9 +107,17 @@ window.onload = function() {
       direction: 'alternate',
       easing: 'easeInOutQuad'
     });
-    var loadingDots = anime({
+    var dotsStart = anime({
+      targets: elements.loading,
+      translateX: ['-2rem', '0rem'],
+      scale: [.5, 1],
+      duration: 400,
+      delay: 25,
+      easing: 'easeOutElastic',
+    });
+    var dotsPulse = anime({
       targets: elements.bubble.querySelectorAll('b'),
-      scale: 1.25,
+      scale: [1, 1.25],
       opacity: [.5, 1],
       duration: 300,
       loop: true,
@@ -117,11 +125,8 @@ window.onload = function() {
       delay: function(i) {return (i * 100) + 50}
     });
     setTimeout(function() {
-      var vorderAnim = anime({
-        targets: elements.bubble.querySelector(':after')
-      });
       loadingLoop.pause();
-      loadingDots.restart({
+      dotsPulse.restart({
         opacity: 0,
         scale: 0,
         loop: false,
