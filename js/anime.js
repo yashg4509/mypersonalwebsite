@@ -2,7 +2,7 @@
  * Anime v0.0.0
  * http://anime-js.com
  * Polyvalent yet lightweight Javascript animation library
- * Copyright (c) Julian Garnier
+ * Copyright (c) 2016 Julian Garnier
  * http://juliangarnier.com
  * Released under the MIT license
  */
