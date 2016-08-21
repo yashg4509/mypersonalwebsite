@@ -1,3 +1,9 @@
+/*
+ * This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License. 
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/4.0/.
+ * Copyright (c) 2016 Julian Garnier
+ */
+
 window.onload = function() {
 
   var messagesEl = document.querySelector('.messages');
@@ -73,7 +79,7 @@ window.onload = function() {
   }
 
   var sendMessage = function(message, position) {
-    var loadingDuration = (message.length * typingSpeed) + 500;
+    var loadingDuration = (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + 500;
     var elements = createBubbleElements(message, position);
     messagesEl.appendChild(elements.bubble);
     messagesEl.appendChild(document.createElement('br'));
@@ -160,7 +166,7 @@ window.onload = function() {
     if (!message) return;
     sendMessage(message);
     ++messageIndex;
-    setTimeout(sendMessages, (message.length * typingSpeed) + anime.random(900, 1200));
+    setTimeout(sendMessages, (message.replace(/<(?:.|\n)*?>/gm, '').length * typingSpeed) + anime.random(900, 1200));
   }
 
   sendMessages();
